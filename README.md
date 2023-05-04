@@ -1,12 +1,10 @@
 # 🤯 HEAD
 
 > A simple guide to HTML `<head>` elements
-
-[![Contributors](https://img.shields.io/github/contributors/joshbuchea/head.svg?style=for-the-badge)](https://github.com/joshbuchea/HEAD/graphs/contributors)
-[![CC0](https://img.shields.io/badge/license-CC0-green.svg?style=for-the-badge)](https://creativecommons.org/publicdomain/zero/1.0/)
-[![Follow @joshbuchea on Mastodon](https://img.shields.io/badge/Follow_@joshbuchea-purple?logo=mastodon&logoColor=white&style=for-the-badge)](https://hachyderm.io/@joshbuchea)
+> HTML-ის `<head>` ელემენტების მარტივი გზამკვლევი
 
 ## Table of Contents
+## სარჩევი
 
 - [Recommended Minimum](#recommended-minimum)
 - [Elements](#elements)
@@ -42,8 +40,10 @@
 - [License](#-license)
 
 ## Recommended Minimum
+## რეკომენდებული მინიმუმი
 
 Below are the essential elements for any web document (websites/apps):
+ქვემოთ მოცემულია არსებითი ელემენტები ნებისმიერი ვებ დოკუმენტისათვის (ვებსაიტებისთვის/აპებისთვის):
 
 ```html
 <meta charset="utf-8">
@@ -53,18 +53,28 @@ Below are the essential elements for any web document (websites/apps):
   to consistently ensure proper document rendering.
   Any other head element should come *after* these tags.
  -->
+ <!--
+  უპირველესად, ზემოთ მოცემული ორი მეტა ტეგი *უნდა* განთავსდეს <head>-ში,
+  რათა დავრწმუნდეთ, რომ დოკუმენტი სათანადოდ აისახება. 
+  ნებისმიერი სხვა head-ელემენტი უნდა განთავსდეს ამ ტეგების *შემდეგ*.
+ -->
 <title>Page Title</title>
+<title>გვერდის სათაური</title>
 ```
 
 `meta charset` - defines the encoding of the website, `utf-8` is the standard
+`meta charset` - განსაზღვრავს ვებსაიტის კოდირებას[^1]; `utf-8` სტანდარტი გახლავთ
 
 `meta name="viewport"` - viewport settings related to mobile responsiveness
+`meta name="viewport"` - ხედვის არეალის[^2] პარამეტრები; დაკავშირებულია მობილურზე თავსებადობასთან
 
 `width=device-width` - use the physical width of the device (great for mobile!)
+`width=device-width` - მოწყობილობის ფიზიკური სიგანის გამოყენება (შესანიშნავია მობილურებისთვის!)
 
 `initial-scale=1` - the initial zoom, 1 means no zoom
+`initial-scale=1` - საწყისი ზუმირება; 1 აღნიშნავს ზუმირების არარსებობას
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ ზემოთ](#table-of-contents)**
 
 ## Elements
 
@@ -104,7 +114,7 @@ These elements provide information for how a document should be perceived, and r
 </noscript>
 ```
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ ზემოთ](#table-of-contents)**
 
 ## Meta
 
@@ -188,7 +198,7 @@ These elements provide information for how a document should be perceived, and r
 - 📖 [ICBM on Wikipedia](https://en.wikipedia.org/wiki/ICBM_address#Modern_use)
 - 📖 [Geotagging on Wikipedia](https://en.wikipedia.org/wiki/Geotagging#HTML_pages)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ ზემოთ](#table-of-contents)**
 
 ## Link
 
@@ -264,7 +274,7 @@ These elements provide information for how a document should be perceived, and r
 
 - 📖 [Link Relations](https://www.iana.org/assignments/link-relations/link-relations.xhtml)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ ზემოთ](#table-of-contents)**
 
 ## Icons
 
@@ -287,7 +297,7 @@ These elements provide information for how a document should be perceived, and r
 - 📖 [Favicon Cheat Sheet](https://github.com/audreyr/favicon-cheat-sheet)
 - 📖 [Icons & Browser Colors](https://developers.google.com/web/fundamentals/design-and-ux/browser-customization/)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ ზემოთ](#table-of-contents)**
 
 ## Social
 
@@ -399,7 +409,7 @@ Users share web pages to qq wechat will have a formatted message
 ```
 - 📖 [Code Format Docs](http://open.mobile.qq.com/api/mqq/index#api:setShareInfo)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ ზემოთ](#table-of-contents)**
 
 ## Browsers / Platforms
 
@@ -488,7 +498,7 @@ Minimum required xml markup for `browserconfig.xml`:
 
 - 📖 [Browser configuration schema reference](https://msdn.microsoft.com/en-us/library/dn320426.aspx)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ ზემოთ](#table-of-contents)**
 
 ## Browsers (Chinese)
 
@@ -539,7 +549,7 @@ Minimum required xml markup for `browserconfig.xml`:
 
 - 📖 [UC Browser Docs](https://www.uc.cn/download/UCBrowser_U3_API.doc)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ ზემოთ](#table-of-contents)**
 
 ## App Links
 
@@ -560,14 +570,14 @@ Minimum required xml markup for `browserconfig.xml`:
 
 - 📖 [App Links](https://developers.facebook.com/docs/applinks)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ ზემოთ](#table-of-contents)**
 
 ## Other Resources
 
 - 📖 [HTML5 Boilerplate Docs: The HTML](https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/html.md)
 - 📖 [HTML5 Boilerplate Docs: Extend and customize](https://github.com/h5bp/html5-boilerplate/blob/master/dist/doc/extend.md)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ ზემოთ](#table-of-contents)**
 
 ## Related Projects
 
@@ -576,13 +586,13 @@ Minimum required xml markup for `browserconfig.xml`:
 - [head-it](https://github.com/hemanth/head-it) - CLI interface for `HEAD` snippets
 - [vue-head](https://github.com/ktquez/vue-head) - Manipulating the meta information of the `HEAD` tag for Vue.js
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ ზემოთ](#table-of-contents)**
 
 ## Other Formats
 
 - 📄 [PDF](https://gitprint.com/joshbuchea/HEAD/blob/master/README.md)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ ზემოთ](#table-of-contents)**
 
 ## 🌐 Translations
 
@@ -597,7 +607,7 @@ Minimum required xml markup for `browserconfig.xml`:
 - 🇪🇸 [Spanish](https://github.com/alvaroadlf/HEAD)
 - 🇹🇷 [Turkish/Türkçe](https://github.com/mkg0/HEAD)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ ზემოთ](#table-of-contents)**
 
 ## 🤝 Contributing
 
@@ -653,4 +663,9 @@ Everything helps, thanks! 🙏
 
 [![CC0](https://i.creativecommons.org/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
 
-**[⬆ back to top](#table-of-contents)**
+**[⬆ ზემოთ](#table-of-contents)**
+
+[^1]:
+    (ინგლ.: Encoding)
+[^2]:
+    (ინგლ.: Viewport)
