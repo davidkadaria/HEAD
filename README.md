@@ -77,10 +77,13 @@ Below are the essential elements for any web document (websites/apps):
 **[⬆ ზემოთ](#table-of-contents)**
 
 ## Elements
+## ელემენტები
 
 Valid `<head>` elements include `meta`, `link`, `title`, `style`, `script`, `noscript`, and `base`.
+მოქმედ `<head>`-ელემენტებს წარმოადგენენ: `meta`, `link`, `title`, `style`, `script`, `noscript` და `base`.
 
 These elements provide information for how a document should be perceived, and rendered, by web technologies. e.g. browsers, search engines, bots, etc.
+ეს ელემენტები იძლევიან ინფორმაციას იმის შესახებ, თუ როგორ უნდა იქნეს დოკუმენტი აღქმული და ასახული ვებტექნოლოგიების (მაგ.: ბრაუზერების, საძიებო სისტემების, ბოტების და ა.შ.) მიერ.
 
 ```html
 <!--
@@ -88,29 +91,40 @@ These elements provide information for how a document should be perceived, and r
   all characters within the UTF-8 space (such as emoji)
   are rendered correctly.
 -->
+<!--
+  განვსაზღვროთ სიმბოლოთა კოდირება ამ კონკრეტული დოკუმენტისთვის, რათა
+  დავრწმუნდეთ, რომ UTF-8-ის ფარგლებში არსებული ყოველი სიმბოლოს (როგორიცაა ემოჯი)
+  ასახვა სწორად მოხდება.
+-->
 <meta charset="utf-8">
 
 <!-- Set the document's title -->
-<title>Page Title</title>
+<!-- განვსაზღვროთ დოკუმენტის სათაური -->
+<title>გვერდის სათაური</title>
 
 <!-- Set the base URL for all relative URLs within the document -->
+<!-- განვსაზღვროთ ბაზისური URL დოკუმენტში არსებული ყოველი ურთიერთდაკავშირებული URL-სთვის -->
 <base href="https://example.com/page.html">
 
 <!-- Link to an external CSS file -->
+<!-- გარე CSS -->
 <link rel="stylesheet" href="styles.css">
 
 <!-- Used for adding in-document CSS -->
+<!-- დოკუმენტის შიდა CSS -->
 <style>
   /* ... */
 </style>
 
 <!-- JavaScript & No-JavaScript tags -->
+<!-- JavaScript & No-JavaScript ტეგები -->
 <script src="script.js"></script>
 <script>
   // function(s) go here
 </script>
 <noscript>
   <!-- No JS alternative -->
+  <!-- ალტერნატიული კოდი JS-ის მიუწვდომლობის შემთხვევისთვის -->
 </noscript>
 ```
 
