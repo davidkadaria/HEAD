@@ -55,7 +55,7 @@ Below are the essential elements for any web document (websites/apps):
  -->
  <!--
   უპირველესად, ზემოთ მოცემული ორი მეტა ტეგი *უნდა* განთავსდეს <head>-ში,
-  რათა დავრწმუნდეთ, რომ დოკუმენტი სათანადოდ აისახება. 
+  რათა დავრწმუნდეთ, რომ დოკუმენტი სათანადოდ აისახება (დარენდერდება). 
   ნებისმიერი სხვა head-ელემენტი უნდა განთავსდეს ამ ტეგების *შემდეგ*.
  -->
 <title>Page Title</title>
@@ -63,7 +63,7 @@ Below are the essential elements for any web document (websites/apps):
 ```
 
 `meta charset` - defines the encoding of the website, `utf-8` is the standard
-`meta charset` - განსაზღვრავს ვებსაიტის კოდირებას[^1]; `utf-8` სტანდარტი გახლავთ
+`meta charset` - განსაზღვრავს ვებსაიტის კოდირებას[^1]; `utf-8` გახლავთ სტანდარტი
 
 `meta name="viewport"` - viewport settings related to mobile responsiveness
 `meta name="viewport"` - ხედვის არეალის[^2] პარამეტრები; დაკავშირებულია მობილურზე თავსებადობასთან
