@@ -54,7 +54,7 @@ Below are the essential elements for any web document (websites/apps):
   Any other head element should come *after* these tags.
  -->
  <!--
-  უპირველესად, ზემოთ მოცემული ორი მეტა ტეგი *უნდა* განთავსდეს <head>-ში,
+  უპირველესად ზემოთ მოცემული ორი მეტა ტეგი *უნდა* განთავსდეს <head>-ში,
   რათა დავრწმუნდეთ, რომ დოკუმენტი სათანადოდ აისახება (დარენდერდება). 
   ნებისმიერი სხვა head-ელემენტი უნდა განთავსდეს ამ ტეგების *შემდეგ*.
  -->
@@ -100,10 +100,10 @@ These elements provide information for how a document should be perceived, and r
 
 <!-- Set the document's title -->
 <!-- განვსაზღვროთ დოკუმენტის სათაური -->
-<title>გვერდის სათაური</title>
+<title>Page Title</title>
 
 <!-- Set the base URL for all relative URLs within the document -->
-<!-- განვსაზღვროთ ბაზისური URL დოკუმენტში არსებული ყოველი ურთიერთდაკავშირებული URL-სთვის -->
+<!-- განვსაზღვროთ ბაზისური URL, დოკუმენტში არსებული ყოველი ურთიერთდაკავშირებული URL-სთვის -->
 <base href="https://example.com/page.html">
 
 <!-- Link to an external CSS file -->
@@ -121,6 +121,7 @@ These elements provide information for how a document should be perceived, and r
 <script src="script.js"></script>
 <script>
   // function(s) go here
+  // ფუნქცია(ები) დაიწერება აქ
 </script>
 <noscript>
   <!-- No JS alternative -->
@@ -138,6 +139,11 @@ These elements provide information for how a document should be perceived, and r
   to consistently ensure proper document rendering.
   Any other head element should come *after* these tags.
 -->
+<!--
+  უპირველესად ქვემოთ მოცემული ორი მეტა ტეგი *უნდა* განთავსდეს <head>-ში,
+  რათა დავრწმუნდეთ, რომ დოკუმენტი სათანადოდ აისახება (დარენდერდება). 
+  ნებისმიერი სხვა head-ელემენტი უნდა განთავსდეს ამ ტეგების *შემდეგ*.
+ -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -146,29 +152,42 @@ These elements provide information for how a document should be perceived, and r
   Place as early in the <head> as possible, as the tag  
   only applies to resources that are declared after it.
 -->
+<!--
+  Allows control over where resources are loaded from.
+  Place as early in the <head> as possible, as the tag  
+  only applies to resources that are declared after it.
+-->
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
 
 <!-- Name of web application (only should be used if the website is used as an app) -->
+<!-- ვებაპლიკაციის სახელი (უნდა განისაზღვროს მხოლოდ იმ შემთხვევაში, თუკი აღნიშნული ვებსაიტი გამოიყენება, როგორც აპლიკაცია) -->
 <meta name="application-name" content="Application Name">
 
 <!-- Theme Color for Chrome, Firefox OS and Opera -->
+<!-- თემის ფერი Chrome-სთვის, Firefox OS-სთვის და Opera-სთვის -->
 <meta name="theme-color" content="#4285f4">
 
 <!-- Short description of the document (limit to 150 characters) -->
+<!-- დოკუმენტის მოკლე აღწერა (რეკომენდებული მაქსიმალირუ სიგრძე: 150 სიმბოლო) -->
 <!-- This content *may* be used as a part of search engine results. -->
+<!-- აღნიშნული მნიშვნელობა *შესაძლოა* გამოყენებულ იქნეს საძიებო სისტემების მიერ.  -->
 <meta name="description" content="A description of the page">
 
 <!-- Control the behavior of search engine crawling and indexing -->
-<meta name="robots" content="index,follow"><!-- All Search Engines -->
-<meta name="googlebot" content="index,follow"><!-- Google Specific -->
+<!-- აკონტროლებს საძიებო სისტემის ქცევას ძიებისას და ინდექსირებისას -->
+<meta name="robots" content="index,follow"><!-- All Search Engines --><!-- ყველა საძიებო სისტემა -->
+<meta name="googlebot" content="index,follow"><!-- Google Specific --><!-- კონკრეტულად Google -->
 
 <!-- Tells Google not to show the sitelinks search box -->
+<!-- ეუბნება Google-ს, რომ არ აჩვენოს საიტის შიდა საძიებო ველი ძიების შედეგებში -->
 <meta name="google" content="nositelinkssearchbox">
 
 <!-- Tells Google not to provide a translation for this document -->
+<!-- ეუბნება Google-ს, რომ არ უზრუნველყოს თარგმანი ამ დოკუმენტისთვის -->
 <meta name="google" content="notranslate">
 
 <!-- Verify website ownership -->
+<!-- ვებსაიტის მფლობელობის დამოწმება -->
 <meta name="google-site-verification" content="verification_token"><!-- Google Search Console -->
 <meta name="yandex-verification" content="verification_token"><!-- Yandex Webmasters -->
 <meta name="msvalidate.01" content="verification_token"><!-- Bing Webmaster Center -->
@@ -177,9 +196,11 @@ These elements provide information for how a document should be perceived, and r
 <meta name="norton-safeweb-site-verification" content="norton_code"><!-- Norton Safe Web -->
 
 <!-- Identify the software used to build the document (i.e. - WordPress, Dreamweaver) -->
+<!-- დოკუმენტის ასაგებად გამოყენებული პროგრამული უზრუნველყოფის იდენტიფიცირება (მაგ.: WordPress, Dreamweaver) -->
 <meta name="generator" content="program">
 
 <!-- Short description of your document's subject -->
+<!-- დოკუმენტის შინაარსობრივი ნაწილის მოკლე აღწერა -->
 <meta name="subject" content="your document's subject">
 
 <!-- Gives a general age rating based on the document's content -->
