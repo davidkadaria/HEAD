@@ -1,12 +1,14 @@
 # 🤯 HEAD
 
 > A simple guide to HTML `<head>` elements
+> HTML-ის `<head>` ელემენტების მარტივი გზამკვლევი
 
 [![Contributors](https://img.shields.io/github/contributors/joshbuchea/head.svg?style=for-the-badge)](https://github.com/joshbuchea/HEAD/graphs/contributors)
 [![CC0](https://img.shields.io/badge/license-CC0-green.svg?style=for-the-badge)](https://creativecommons.org/publicdomain/zero/1.0/)
 [![Follow @joshbuchea on Mastodon](https://img.shields.io/badge/Follow_@joshbuchea-purple?logo=mastodon&logoColor=white&style=for-the-badge)](https://hachyderm.io/@joshbuchea)
 
 ## Table of Contents
+## სარჩევი
 
 - [Recommended Minimum](#recommended-minimum)
 - [Elements](#elements)
@@ -45,8 +47,10 @@
 - [License](#-license)
 
 ## Recommended Minimum
+## რეკომენდებული მინიმუმი
 
 Below are the essential elements for any web document (websites/apps):
+ქვემოთ მოცემულია არსებითი ელემენტები ნებისმიერი ვებ დოკუმენტისათვის (ვებსაიტებისთვის/აპებისთვის):
 
 ```html
 <meta charset="utf-8">
@@ -56,16 +60,26 @@ Below are the essential elements for any web document (websites/apps):
   to consistently ensure proper document rendering.
   Any other head element should come *after* these tags.
 -->
+<!--
+  ზემოთ მოცემული ორი მეტა ტეგი <head>-ში რაც შეიძლება ადრე უნდა განთავსდეს,
+  რათა დავრწმუნდეთ, რომ დოკუმენტი სათანადოდ აისახება (დარენდერდება).
+  ნებისმიერი სხვა head-ელემენტი უნდა განთავსდეს ამ ტეგების *შემდეგ*.
+-->
 <title>Page Title</title>
+<title>გვერდის სათაური</title>
 ```
 
 `meta charset` - defines the encoding of the website, `utf-8` is the standard
+`meta charset` - განსაზღვრავს ვებსაიტის კოდირებას[^1]; `utf-8` გახლავთ სტანდარტი
 
 `meta name="viewport"` - viewport settings related to mobile responsiveness
+`meta name="viewport"` - ხედვის არეალის[^2] პარამეტრები; მობილურთან თავსებადობის ხარისხზე ზემოქმედებს
 
 `width=device-width` - use the physical width of the device (great for mobile!)
+`width=device-width` - მოწყობილობის ფიზიკური სიგანის გამოყენება (შესანიშნავია მობილურებისთვის!)
 
 `initial-scale=1` - the initial zoom, 1 means no zoom
+`initial-scale=1` - საწყისი ზუმირება[^3]; 1 აღნიშნავს ზუმირების არარსებობას
 
 ## Elements
 
@@ -694,3 +708,10 @@ Everything helps, thanks! 🙏
 ## 📝 License
 
 [![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
+
+[^1]:
+    სიგნალის ან მონაცემების გადასაცემად ვარგის ფორმატში გადაყვანა (ინგლ.: Encoding)
+[^2]:
+    (ინგლ.: Viewport)
+[^3]:
+    კადრის / გამოსახულების სწრაფი გადიდება (ინგლ.: Zoom)
