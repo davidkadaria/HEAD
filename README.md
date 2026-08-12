@@ -135,19 +135,31 @@ These elements provide information for how a document should be perceived, and r
 ```
 
 ## Recommended Order
+## რეკომენდებული თანმიმდევრობა
 
 The following is the recommended order of elements in the `<head>` for best performance and correct document rendering:
+ქვემოთ მოცემულია `<head>`-ში ელემენტების განთავსების რეკომენდებული თანმიმდევრობა საუკეთესო წარმადობისა და დოკუმენტის სწორად ასახვისათვის:
 
 1. `<meta charset>` — Character encoding declaration; **must** appear within the first 1024 bytes of the document
+1. `<meta charset>` — სიმბოლოთა კოდირების დეკლარაცია; **აუცილებლად** უნდა განთავსდეს დოკუმენტის პირველი 1024 ბაიტის ფარგლებში
 2. `<meta name="viewport">` — Viewport settings; declare early to ensure correct responsive rendering
+2. `<meta name="viewport">` — ხედვის არეალის პარამეტრები; განათავსეთ დოკუმენტის თავში, რათა უზრუნველყოთ ეკრანის ზომებთან თავსებადი სწორი ასახვა
 3. `<title>` — Document title; placed after encoding/viewport to prevent potential re-rendering
+3. `<title>` — დოკუმენტის სათაური; თავსდება კოდირებისა და ხედვის არეალის შემდეგ, რათა თავიდან იქნეს აცილებული შესაძლო ხელახალი ასახვა
 4. Other `<meta>` tags (description, robots, etc.)
+4. სხვა `<meta>` ტეგები (description, robots და ა.შ.)
 5. Open Graph / Social meta tags
+5. Open Graph / სოციალურ ქსელებთან დაკავშირებული მეტა ტეგები
 6. `<link rel="canonical">` and other `<link>` tags (excluding stylesheets and resource hints)
+6. `<link rel="canonical">` და სხვა `<link>` ტეგები (გარდა სტილის კასკადური ცხრილებისა[^4] და რესურსების მინიშნებების[^5])
 7. `<link rel="preconnect">` / `<link rel="dns-prefetch">` — Resource hints; early to maximize their value
+7. `<link rel="preconnect">` / `<link rel="dns-prefetch">` — რესურსების მინიშნებები; მაქსიმალური ეფექტურობისთვის განათავსეთ რაც შეიძლება ადრე
 8. `<link rel="stylesheet">` — External CSS; stylesheets should come before scripts
+8. `<link rel="stylesheet">` — გარე CSS; სტილის კასკადური ცხრილები სკრიპტებზე ადრე უნდა განთავსდეს
 9. `<link rel="icon">` — Favicons
+9. `<link rel="icon">` — საიტის ხატულები[^6]
 10. `<script>` — Scripts; use `defer` or `async` where possible to avoid blocking rendering
+10. `<script>` — სკრიპტები[^7]; შეძლებისდაგვარად გამოიყენეთ `defer` ან `async` [ატრიბუტები], რათა არ დაიბლოკოს ასახვა
 
 ```html
 <head>
@@ -158,13 +170,17 @@ The following is the recommended order of elements in the `<head>` for best perf
 
   <meta name="description" content="Page description">
   <!-- other meta tags -->
+  <!-- სხვა მეტა ტეგები -->
 
   <!-- Open Graph / Social meta tags -->
+  <!-- Open Graph / სოციალურ ქსელებთან დაკავშირებული მეტა ტეგები -->
   <meta property="og:title" content="Page Title">
   <!-- other social meta tags -->
+  <!-- სოციალურ ქსელებთან დაკავშირებული სხვა მეტა ტეგები -->
 
   <link rel="canonical" href="https://example.com/page.html">
   <!-- other link tags (excluding stylesheets and resource hints) -->
+  <!-- სხვა link ტეგები (გარდა სტილის კასკადური ცხრილებისა და რესურსების მინიშნებების) -->
 
   <link rel="preconnect" href="https://example.com">
   <link rel="dns-prefetch" href="https://example.com">
@@ -730,3 +746,11 @@ Everything helps, thanks! 🙏
     (ინგლ.: Viewport)
 [^3]:
     კადრის / გამოსახულების სწრაფი გადიდება (ინგლ.: Zoom)
+[^4]:
+    ტექნოლოგია, რომელიც გამოიყენება მოსანიშნ ენაზე, მაგ.: HTML დოკუმენტის იერსახისა და ფორმატირების აღსაწერად; აბრევ. CSS (ინგლ.: Stylesheets)
+[^5]:
+    (ინგლ.: Resource hints)
+[^6]:
+    (ინგლ.: Favicons)
+[^7]:
+    მცირე პროგრამა / ტექსტური ფაილი, რომელიც შეიცავს სხვა პროგრამისთვის შესასრულებელ ბრძანებებს (ინგლ.: Script)
