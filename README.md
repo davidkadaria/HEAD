@@ -681,11 +681,13 @@ Fediverse-ის ზოგიერთი პროგრამა, როგო
 ```
 
 ## Browsers (Chinese)
+## ბრაუზერები (ჩინური)
 
 ### 360 Browser
 
 ```html
 <!-- Select rendering engine order -->
+<!-- ამსახავი ძრავების (rendering engines) რიგითობის არჩევა -->
 <meta name="renderer" content="webkit|ie-comp|ie-stand">
 ```
 
@@ -693,12 +695,15 @@ Fediverse-ის ზოგიერთი პროგრამა, როგო
 
 ```html
 <!-- Locks the screen into the specified orientation -->
+<!-- კეტავს ეკრანს მითითებულ ორიენტაციაში -->
 <meta name="x5-orientation" content="landscape/portrait">
 
 <!-- Display this document in fullscreen -->
+<!-- აჩვენებს აღნიშნულ დოკუმენტს მთლიან ეკრანზე -->
 <meta name="x5-fullscreen" content="true">
 
 <!-- Document will be displayed in "application mode" (fullscreen, etc.) -->
+<!-- დოკუმენტი აისახება „აპლიკაციის რეჟიმში“ (მთლიან ეკრანზე და ა.შ.) -->
 <meta name="x5-page-mode" content="app">
 ```
 
@@ -706,24 +711,31 @@ Fediverse-ის ზოგიერთი პროგრამა, როგო
 
 ```html
 <!-- Locks the screen into the specified orientation -->
+<!-- კეტავს ეკრანს მითითებულ ორიენტაციაში -->
 <meta name="screen-orientation" content="landscape/portrait">
 
 <!-- Display this document in fullscreen -->
+<!-- აჩვენებს აღნიშნულ დოკუმენტს მთლიან ეკრანზე -->
 <meta name="full-screen" content="yes">
 
 <!-- UC browser will display images even if in "text mode" -->
+<!-- UC ბრაუზერი სურათებს მაშინაც აჩვენებს, როცა „ტექსტის რეჟიმშია“ -->
 <meta name="imagemode" content="force">
 
 <!-- Document will be displayed in "application mode"(fullscreen, forbidding gesture, etc.) -->
+<!-- დოკუმენტი აისახება „აპლიკაციის რეჟიმში“ (მთლიან ეკრანზე, ჟესტების აკრძალვით და ა.შ.) -->
 <meta name="browsermode" content="application">
 
 <!-- Disabled the UC browser's "night mode" for this document -->
+<!-- თიშავს UC ბრაუზერის „ღამის რეჟიმს“ ამ დოკუმენტისთვის -->
 <meta name="nightmode" content="disable">
 
 <!-- Simplify the document to reduce data transfer -->
+<!-- ამარტივებს დოკუმენტს გადაცემული მონაცემების მოცულობის შესამცირებლად -->
 <meta name="layoutmode" content="fitscreen">
 
 <!-- Disable the UC browser's feature of "scaling font up when there are many words in this document" -->
+<!-- თიშავს UC ბრაუზერის შემდეგ ფუნქციას: „შრიფტის გადიდება, როცა დოკუმენტში ბევრი სიტყვაა“ -->
 <meta name="wap-font-scale" content="no">
 ```
 
