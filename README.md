@@ -755,14 +755,17 @@ Fediverse-ის ზოგიერთი პროგრამა, როგო
 <meta property="al:android:package" content="org.applinks">
 
 <!-- Web fall back -->
+<!-- სათადარიგო ვებ ვარიანტი (fall back) -->
 <meta property="al:web:url" content="https://applinks.org/documentation">
 ```
 
 - 📖 [App Links](https://developers.facebook.com/docs/applinks)
 
 ## Deprecated
+## მოძველებული
 
 For tags and elements that were once part of this guide but are no longer supported (Internet Explorer compatibility, Safari Pinned Tabs, Alexa verification, etc.), see [DEPRECATED.md](https://github.com/joshbuchea/HEAD/blob/master/DEPRECATED.md).
+იმ ტეგებისა და ელემენტების სანახავად, რომლებიც ოდესღაც ამ გზამკვლევის ნაწილს წარმოადგენდნენ, თუმცა აღარ არის მხარდაჭერილი (Internet Explorer-თან თავსებადობა, Safari Pinned Tabs, Alexa-ს დამოწმება და ა.შ.), იხილეთ [DEPRECATED.md](https://github.com/joshbuchea/HEAD/blob/master/DEPRECATED.md).
 
 ## Other Resources
 
