@@ -768,19 +768,27 @@ For tags and elements that were once part of this guide but are no longer suppor
 იმ ტეგებისა და ელემენტების სანახავად, რომლებიც ოდესღაც ამ გზამკვლევის ნაწილს წარმოადგენდნენ, თუმცა აღარ არის მხარდაჭერილი (Internet Explorer-თან თავსებადობა, Safari Pinned Tabs, Alexa-ს დამოწმება და ა.შ.), იხილეთ [DEPRECATED.md](https://github.com/joshbuchea/HEAD/blob/master/DEPRECATED.md).
 
 ## Other Resources
+## სხვა რესურსები
 
 - 📖 [HTML5 Boilerplate Docs: The HTML](https://github.com/h5bp/html5-boilerplate/blob/main/docs/html.md)
 - 📖 [HTML5 Boilerplate Docs: Extend and customize](https://github.com/h5bp/html5-boilerplate/blob/main/docs/extend.md)
 
 ## Related Projects
+## მონათესავე პროექტები
 
 - [Atom HTML Head Snippets](https://github.com/joshbuchea/atom-html-head-snippets) - Atom package for `HEAD` snippets
+- [Atom HTML Head Snippets](https://github.com/joshbuchea/atom-html-head-snippets) - Atom-ის პაკეტი `HEAD` სნიპეტებისთვის
 - [Sublime Text HTML Head Snippets](https://github.com/marcobiedermann/sublime-head-snippets) - Sublime Text package for `HEAD` snippets
+- [Sublime Text HTML Head Snippets](https://github.com/marcobiedermann/sublime-head-snippets) - Sublime Text-ის პაკეტი `HEAD` სნიპეტებისთვის
 - [head-it](https://github.com/hemanth/head-it) - CLI interface for `HEAD` snippets
+- [head-it](https://github.com/hemanth/head-it) - ბრძანებათა სტრიქონის (CLI) ინტერფეისი `HEAD` სნიპეტებისთვის
 - [vue-head](https://github.com/ktquez/vue-head) - Manipulating the meta information of the `HEAD` tag for Vue.js
+- [vue-head](https://github.com/ktquez/vue-head) - `HEAD` ტეგის მეტაინფორმაციის მართვა Vue.js-სთვის
 
 ## 🌐 Translations
+## 🌐 თარგმანები
 
+- [English (Original)](https://github.com/joshbuchea/HEAD)
 - [Bahasa](https://github.com/rijdz/HEAD)
 - [Bengali](https://github.com/AveyBD/HEAD)
 - [Brazilian Portuguese](https://github.com/Webschool-io/HEAD)
@@ -796,57 +804,84 @@ For tags and elements that were once part of this guide but are no longer suppor
 - [Ukrainian](https://github.com/Shramkoweb/HEAD)
 
 ## 🤝 Contributing
+## 🤝 წვლილის შეტანა
 
 **Open an issue or a pull request to suggest changes or additions.**
+**ცვლილებების ან დამატებების შესათავაზებლად გახსენით issue ან pull request-ი.**
 
 ### Guide
+### გზამკვლევი
 
 The **HEAD** repository consists of two branches:
+**HEAD**-ის საცავი ორი განშტოებისგან შედგება:
 
 #### 1. `master`
 
 This branch consists of the `README.md` file that is reflected on the [htmlhead.dev](https://htmlhead.dev/) website. All changes to the content of the guide should be made in this file.
+აღნიშნული განშტოება შეიცავს `README.md` ფაილს, რომელიც აისახება [htmlhead.dev](https://htmlhead.dev/) ვებსაიტზე. გზამკვლევის შიგთავსში ყველა ცვლილება ამ ფაილში უნდა განხორციელდეს.
 
 Please follow these steps for pull requests:
+გთხოვთ, pull request-ების შექმნისთვის მიჰყვეთ შემდეგ ეტაპებს:
 
 {:.list-style-default}
 
 - Modify only one tag, or one related set of tags at a time
+- ერთ ჯერზე შეცვალეთ მხოლოდ ერთი ტეგი ან ურთიერთდაკავშირებულ ტეგთა ერთი ჯგუფი
 - Use double quotes on attributes
+- ატრიბუტებში გამოიყენეთ ორმაგი ბრჭყალები
 - Don't include a trailing slash in self-closing elements — the HTML5 spec says they're optional
+- თვითდახურვად ელემენტებში ნუ ჩართავთ ბოლო დახრილ ხაზს — HTML5 სპეციფიკაციის თანახმად, იგი არასავალდებულოა
 - Consider including a link to documentation that supports your change
+- სასურველია, დაურთოთ ბმული დოკუმენტაციაზე, რომელიც თქვენს ცვლილებას მხარს უჭერს
 
 #### 2. `gh-pages`
 
 This branch is responsible for the [htmlhead.dev](https://htmlhead.dev/) website. We use [Jekyll](https://jekyllrb.com/) to deploy the `README.md` markdown file to [GitHub Pages](https://pages.github.com/). All website related modifications should be made in this branch.
+აღნიშნული განშტოება პასუხისმგებელია [htmlhead.dev](https://htmlhead.dev/) ვებსაიტზე. ჩვენ ვიყენებთ [Jekyll](https://jekyllrb.com/)-ს, რათა `README.md` Markdown-ფაილი [GitHub Pages](https://pages.github.com/)-ზე განვათავსოთ. ვებსაიტთან დაკავშირებული ყველა ცვლილება ამ განშტოებაში უნდა განხორციელდეს.
 
 You may find it helpful to review the [Jekyll Docs](https://jekyllrb.com/docs/home/) and understand how Jekyll works before working in this branch.
+შესაძლოა, გამოგადგეთ [Jekyll-ის დოკუმენტაციის](https://jekyllrb.com/docs/home/) გაცნობა და Jekyll-ის მუშაობის პრინციპის გაგება, სანამ ამ განშტოებაში მუშაობას დაიწყებთ.
 
 ## 🌟 Contributors
+## 🌟 კონტრიბუტორები
 
 Check out all the super awesome [contributors](https://github.com/joshbuchea/HEAD/graphs/contributors) 🤩
+გაეცანით ყველა ზეშესანიშნავ [კონტრიბუტორს](https://github.com/joshbuchea/HEAD/graphs/contributors) 🤩
 
 ## 👤 Author
+## 👤 ავტორი
 
 **Josh Buchea**
 
 - GitHub: [@joshbuchea](https://github.com/joshbuchea)
 - Mastodon: [@joshbuchea@hachyderm.io](https://hachyderm.io/@joshbuchea)
 
+**მთარგმნელი: დათო ქადარია**
+
+- GitHub: [@davidkadaria](https://github.com/davidkadaria)
+
 ## 💛 Support
+## 💛 მხარდაჭერა
 
 If this project was helpful for you or your organization, please considering supporting my work directly:
+თუკი ეს პროექტი გამოსადეგი აღმოჩნდა თქვენთვის ან თქვენი ორგანიზაციისთვის, გთხოვთ დაუჭიროთ მხარი ჩემს საქმიანობას:
 
 - 💛 [Sponsor me on GitHub](https://github.com/sponsors/joshbuchea)
+- 💛 [გახდით ჩემი სპონსორი GitHub-ზე](https://github.com/sponsors/joshbuchea)
 - ⭐️ [Star this project on GitHub](https://github.com/joshbuchea/HEAD)
+- ⭐️ [შეაფასეთ ეს პროექტი ვარსკვლავით GitHub-ზე](https://github.com/joshbuchea/HEAD)
 - 🐙 [Follow me on GitHub](https://github.com/joshbuchea)
+- 🐙 [გამომყევით GitHub-ზე](https://github.com/joshbuchea)
 - 🐘 [Follow me on Mastodon](https://hachyderm.io/@joshbuchea)
+- 🐘 [გამომყევით Mastodon-ზე](https://hachyderm.io/@joshbuchea)
 
 Everything helps, thanks! 🙏
+ნებისმიერი სახის დახმარება ფასეულია, გმადლობთ! 🙏
 
 — Josh
 
 ## 📝 License
+## 📝 ლიცენზია
 
 [![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
 
