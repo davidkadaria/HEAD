@@ -56,7 +56,7 @@ Minimum required xml markup for `browserconfig.xml`:
 ```
 
 Live tiles were removed from the Windows 11 Start menu and are no longer rendered by Edge.
-საინფორმაციო პანელები (Live tiles) ამოღებულ იქნა Windows 11-ის Start მენიუდან და Edge-ის მიერ აღარ ხდება მათი ასახვა (render).
+საინფორმაციო პანელები[^1] ამოღებულ იქნა Windows 11-ის Start მენიუდან და Edge-ის მიერ აღარ ხდება მათი ასახვა[^2].
 
 ## Apple Safari
 
@@ -67,7 +67,7 @@ Live tiles were removed from the Windows 11 Start menu and are no longer rendere
 ```
 
 Safari Pinned Tabs were removed in Safari 17 (2023); the `mask-icon` link relation is no longer used.
-Safari-ის მიმაგრებული ჩანართები (Pinned Tabs) ამოღებულ იქნა Safari 17-ში (2023); `mask-icon` ბმული აღარ გამოიყენება.
+Safari-ის მიმაგრებული ჩანართები[^3] ამოღებულ იქნა Safari 17-ში (2023); `mask-icon` ბმული აღარ გამოიყენება.
 
 ## Apple iOS
 
@@ -103,7 +103,7 @@ iOS 17.4-დან მოყოლებული, Apple-მა [მოძვე
 ```
 
 `x-dns-prefetch-control` was a Firefox/IE-era extension that was never implemented in Chromium and is no longer meaningfully consumed by modern browsers. Use `<link rel="dns-prefetch">` for explicit prefetch hints.
-`x-dns-prefetch-control` გახლდათ Firefox/IE-ის ეპოქის პროგრამული გაფართოება, რომელიც Chromium-ში არასოდეს განხორციელებულა და თანამედროვე ბრაუზერების მიერ აღარ გამოიყენება. წინასწარი ჩატვირთვის პირდაპირი მოთხოვნისთვის გამოიყენეთ `<link rel="dns-prefetch">`.
+`x-dns-prefetch-control` გახლდათ Firefox/IE-ის ეპოქის პროგრამული გაფართოება[^4], რომელიც Chromium-ში არასოდეს განხორციელებულა და თანამედროვე ბრაუზერების მიერ აღარ გამოიყენება. წინასწარი ჩატვირთვის პირდაპირი მოთხოვნისთვის გამოიყენეთ `<link rel="dns-prefetch">`.
 
 ## Link Relations
 ## ბმულის მიმართებები
@@ -128,7 +128,7 @@ Google-მა 2021 წელს [ამოიღო AMP-ის მოთხო�
 ```
 
 [RSD (Really Simple Discoverability)](https://en.wikipedia.org/wiki/Really_Simple_Discovery) was used by XML-RPC blog editors like Windows Live Writer (discontinued in 2017). XML-RPC pingbacks have been [widely disabled by default](https://make.wordpress.org/core/2015/09/30/xml-rpc-settings-in-4-4/) due to their use in DDoS amplification attacks. Use [Webmention](https://www.w3.org/TR/webmention/) instead.
-[RSD (Really Simple Discoverability)](https://en.wikipedia.org/wiki/Really_Simple_Discovery) გამოიყენებოდა XML-RPC ბლოგის რედაქტორების მიერ, როგორიცაა Windows Live Writer (განვითარება შეწყდა 2017 წელს). XML-RPC pingback-ები [უმეტესწილად ნაგულისხმევად გათიშულია](https://make.wordpress.org/core/2015/09/30/xml-rpc-settings-in-4-4/), რადგან ისინი DDoS ტიპის კიბერთავდასხმების გასაძლიერებლად გამოიყენებოდა. სანაცვლოდ გამოიყენეთ [Webmention](https://www.w3.org/TR/webmention/).
+[RSD (Really Simple Discoverability)](https://en.wikipedia.org/wiki/Really_Simple_Discovery) გამოიყენებოდა XML-RPC ბლოგის რედაქტორების მიერ, როგორიცაა Windows Live Writer (განვითარება შეწყდა 2017 წელს). XML-RPC pingback-ები [უმეტესწილად ნაგულისხმევად გათიშულია](https://make.wordpress.org/core/2015/09/30/xml-rpc-settings-in-4-4/)[^5], რადგან ისინი DDoS ტიპის კიბერთავდასხმების გასაძლიერებლად გამოიყენებოდა. სანაცვლოდ გამოიყენეთ [Webmention](https://www.w3.org/TR/webmention/).
 
 ```html
 <!-- Links to a document that describes a collection of records, documents, or other materials of historical interest -->
@@ -197,3 +197,16 @@ Twitter-ის Do Not Track მხარდაჭერა ფაქტობრ
 
 `Window-Target` was a non-standard, IE-era extension that was never adopted by the HTML standard and is not supported by modern browsers.
 `Window-Target` გახლდათ არასტანდარტული, IE-ის ეპოქის პროგრამული გაფართოება, რომელიც HTML სტანდარტს არასოდეს უღიარებია და თანამედროვე ბრაუზერების მიერ მხარდაჭერილი არ არის.
+
+## სქოლიო
+
+[^1]:
+    (ინგლ.: Live tiles)
+[^2]:
+    (ინგლ.: Render)
+[^3]:
+    (ინგლ.: Pinned Tabs)
+[^4]:
+    (ინგლ.: Extension)
+[^5]:
+    მნიშვნელობა გაჩუმების პრინციპით, ნაგულისხმები მნიშვნელობა; პარამეტრების მნიშვნელობა, რომელიც სისტემის ჩართვის / ინიციალიზაციის დროს იგულისხმება (ინგლ.: default)
