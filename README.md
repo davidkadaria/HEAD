@@ -194,12 +194,18 @@ The following is the recommended order of elements in the `<head>` for best perf
 ```
 
 ## Meta
+## მეტა
 
 ```html
 <!--
   The following 2 meta tags should come as early as possible in the <head>
   to consistently ensure proper document rendering.
   Any other head element should come *after* these tags.
+-->
+<!--
+  ქვემოთ მოცემული ორი მეტა ტეგი <head>-ში რაც შეიძლება ადრე უნდა განთავსდეს,
+  რათა დავრწმუნდეთ, რომ დოკუმენტი სათანადოდ აისახება (დარენდერდება).
+  ნებისმიერი სხვა head ელემენტი უნდა განთავსდეს ამ ტეგების *შემდეგ*.
 -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -209,32 +215,46 @@ The following is the recommended order of elements in the `<head>` for best perf
   Place as early in the <head> as possible, as the tag
   only applies to resources that are declared after it.
 -->
+<!--
+  საშუალებას გვაძლევს, ვაკონტროლოთ, თუ საიდან მოხდება რესურსების ჩატვირთვა.
+  განათავსეთ <head>-ში რაც შეიძლება ადრე, ვინაიდან აღნიშნული ტეგი
+  ვრცელდება მხოლოდ მის შემდგომ დეკლარირებულ რესურსებზე.
+-->
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'">
 
 <!-- Name of web application (only should be used if the website is used as an app) -->
+<!-- ვებაპლიკაციის სახელი (უნდა განისაზღვროს მხოლოდ იმ შემთხვევაში, თუკი აღნიშნული ვებსაიტი გამოიყენება, როგორც აპლიკაცია) -->
 <meta name="application-name" content="Application Name">
 
 <!-- Theme Color for Chrome, Firefox OS and Opera -->
+<!-- თემის ფერი Chrome-სთვის, Firefox OS-სთვის და Opera-სთვის -->
 <meta name="theme-color" content="#4285f4">
 
 <!-- Indicates the supported color schemes for the page (light, dark, or both) -->
+<!-- მიუთითებს ვებგვერდის მიერ მხარდაჭერილ ფერთა სქემებს (ნათელი, მუქი ან ორივე) -->
 <meta name="color-scheme" content="light dark">
 
 <!-- Short description of the document (limit to 150 characters) -->
+<!-- დოკუმენტის მოკლე აღწერა (მაქსიმალური სიგრძე: 150 სიმბოლო) -->
 <!-- This content *may* be used as a part of search engine results. -->
+<!-- აღნიშნული შინაარსი *შესაძლოა* გამოყენებულ იქნეს საძიებო სისტემის მიერ. -->
 <meta name="description" content="A description of the page">
 
 <!-- Control the behavior of search engine crawling and indexing -->
-<meta name="robots" content="index,follow"><!-- All Search Engines -->
-<meta name="googlebot" content="index,follow"><!-- Google Specific -->
+<!-- აკონტროლებს საძიებო სისტემის ქცევას ძიებისას და ინდექსირებისას -->
+<meta name="robots" content="index,follow"><!-- All Search Engines --><!-- ყველა საძიებო სისტემა -->
+<meta name="googlebot" content="index,follow"><!-- Google Specific --><!-- კონკრეტულად Google -->
 
 <!-- Tells Google not to show the sitelinks search box -->
+<!-- ეუბნება Google-ს, რომ ძიების შედეგებში არ აჩვენოს საიტის შიდა საძიებო ველი -->
 <meta name="google" content="nositelinkssearchbox">
 
 <!-- Tells Google not to provide a translation for this document -->
+<!-- ეუბნება Google-ს, რომ არ უზრუნველყოს თარგმანი აღნიშნული დოკუმენტისთვის -->
 <meta name="google" content="notranslate">
 
 <!-- Verify website ownership -->
+<!-- ვებსაიტის მფლობელობის დამოწმება -->
 <meta name="google-site-verification" content="verification_token"><!-- Google Search Console -->
 <meta name="yandex-verification" content="verification_token"><!-- Yandex Webmasters -->
 <meta name="msvalidate.01" content="verification_token"><!-- Bing Webmaster Center -->
@@ -242,31 +262,39 @@ The following is the recommended order of elements in the `<head>` for best perf
 <meta name="norton-safeweb-site-verification" content="norton_code"><!-- Norton Safe Web -->
 
 <!-- Identify the software used to build the document (i.e. - WordPress, Dreamweaver) -->
+<!-- დოკუმენტის ასაგებად გამოყენებული პროგრამული უზრუნველყოფის იდენტიფიცირება (მაგ.: WordPress, Dreamweaver) -->
 <meta name="generator" content="program">
 
 <!-- Short description of your document's subject -->
+<!-- დოკუმენტის შინაარსობრივი ნაწილის მოკლე აღწერა -->
 <meta name="subject" content="your document's subject">
 
 <!-- Gives a general age rating based on the document's content -->
+<!-- დოკუმენტის შიგთავსზე დაყრდნობით განსაზღვრავს ზოგად ასაკობრივ შეფასებას -->
 <meta name="rating" content="General">
 
 <!-- Allows control over how referrer information is passed -->
+<!-- საშუალებას გვაძლევს, ვაკონტროლოთ, თუ როგორ გადაიცემა ინფორმაცია წყარო გვერდის (referrer) შესახებ -->
 <meta name="referrer" content="no-referrer">
 
 <!-- Disable automatic detection and formatting of possible phone numbers -->
+<!-- თიშავს შესაძლო სატელეფონო ნომრების ავტომატურ ამოცნობასა და ფორმატირებას -->
 <meta name="format-detection" content="telephone=no">
 
 <!-- Geo tags -->
-<meta name="ICBM" content="latitude, longitude"><!-- Geographic coordinates (latitude, longitude) in decimal degrees; eg. content="48.8566, 2.3522" -->
-<meta name="geo.position" content="latitude;longitude"><!-- Geographic coordinates; latitude and longitude are separated by a semicolon -->
-<meta name="geo.region" content="country[-state]"><!-- Country code (ISO 3166-1): mandatory, state code (ISO 3166-2): optional; eg. content="US" / content="US-NY" -->
-<meta name="geo.placename" content="city/town"><!-- eg. content="New York City" -->
+<!-- გეო ტეგები -->
+<meta name="ICBM" content="latitude, longitude"><!-- Geographic coordinates (latitude, longitude) in decimal degrees; eg. content="48.8566, 2.3522" --><!-- გეოგრაფიული კოორდინატები (განედი, გრძედი) ათწილადი გრადუსებით; მაგ.: content="48.8566, 2.3522" -->
+<meta name="geo.position" content="latitude;longitude"><!-- Geographic coordinates; latitude and longitude are separated by a semicolon --><!-- გეოგრაფიული კოორდინატები; განედი და გრძედი ერთმანეთისგან გამოყოფილია წერტილ-მძიმით -->
+<meta name="geo.region" content="country[-state]"><!-- Country code (ISO 3166-1): mandatory, state code (ISO 3166-2): optional; eg. content="US" / content="US-NY" --><!-- ქვეყნის კოდი (ISO 3166-1): სავალდებულო, შტატის კოდი (ISO 3166-2): არასავალდებულო; მაგ.: content="US" / content="US-NY" -->
+<meta name="geo.placename" content="city/town"><!-- eg. content="New York City" --><!-- მაგ.: content="New York City" -->
 
 <!-- Web Monetization https://webmonetization.org/docs/getting-started -->
+<!-- ვებ მონეტიზაცია https://webmonetization.org/docs/getting-started -->
 <meta name="monetization" content="$paymentpointer.example">
 ```
 
 **Note:** Geo tags are **not** used by browsers directly — they are intended for search engines, web crawlers, and location-based services to understand the geographic relevance of a page's content. `ICBM` (named after the military ICBM address convention) and `geo.position` both express coordinates in decimal degrees; `ICBM` uses a comma separator while `geo.position` uses a semicolon. `geo.region` identifies the country (and optionally the state/region) using ISO codes, and `geo.placename` provides a human-readable place name.
+**შენიშვნა:** გეო ტეგებს ბრაუზერები უშუალოდ **არ** იყენებენ — ისინი განკუთვნილია საძიებო სისტემებისთვის, ვებ კროულერებისთვის[^8] და მდებარეობაზე დაფუძნებული სერვისებისთვის, რათა მათ შეძლონ გვერდის შიგთავსის გეოგრაფიული რელევანტურობის განსაზღვრა. `ICBM` (სახელწოდება მომდინარეობს სამხედრო ICBM მისამართების კონვენციიდან) და `geo.position` — ორივე გამოხატავს კოორდინატებს ათწილადი გრადუსებით; `ICBM` გამყოფად იყენებს მძიმეს, ხოლო `geo.position` — წერტილ-მძიმეს. `geo.region` ISO კოდების მეშვეობით განსაზღვრავს ქვეყანას (და, სურვილისამებრ, შტატს/რეგიონს), ხოლო `geo.placename` გვაწვდის ადგილმდებარეობის ადამიანისთვის წაკითხვად სახელწოდებას.
 
 - 📖 [Meta tags that Google understands](https://developers.google.com/search/docs/crawling-indexing/special-tags?hl=en)
 - 📖 [WHATWG Wiki: MetaExtensions](https://wiki.whatwg.org/wiki/MetaExtensions)
@@ -754,3 +782,5 @@ Everything helps, thanks! 🙏
     (ინგლ.: Favicons)
 [^7]:
     მცირე პროგრამა / ტექსტური ფაილი, რომელიც შეიცავს სხვა პროგრამისთვის შესასრულებელ ბრძანებებს (ინგლ.: Script)
+[^8]:
+    საძიებო რობოტი, საძიებო აგენტი, „ობობა“ (სპეციალური კომპიუტერული პროგრამა, რომელიც ინტერნეტში ავტომატურად აგროვებს და ახარისხებს ინფორმაციას, ახდენს ვებსაიტების ინდექსაციას და მისთ.; აგრ. web crawler, spider).
