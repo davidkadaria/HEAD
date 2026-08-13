@@ -602,35 +602,45 @@ Fediverse-ის ზოგიერთი პროგრამა, როგო
 ```
 
 ## Browsers / Platforms
+## ბრაუზერები / პლატფორმები
 
 ### Apple iOS
 
 ```html
 <!-- Smart App Banner -->
+<!-- აპლიკაციის ჭკვიანი ბანერი (Smart App Banner) -->
 <meta name="apple-itunes-app" content="app-id=APP_ID,affiliate-data=AFFILIATE_ID,app-argument=SOME_TEXT">
 
 <!-- Disable automatic detection and formatting of possible phone numbers -->
+<!-- თიშავს შესაძლო სატელეფონო ნომრების ავტომატურ ამოცნობასა და ფორმატირებას -->
 <meta name="format-detection" content="telephone=no">
 
 <!-- Launch Icon (180x180px or larger) -->
+<!-- გაშვების ხატულა (180x180 პიქსელი ან მეტი) -->
 <link rel="apple-touch-icon" href="/path/to/apple-touch-icon.png">
 
 <!-- Launch Screen Image -->
+<!-- გაშვების ეკრანის სურათი -->
 <link rel="apple-touch-startup-image" href="/path/to/launch.png">
 
 <!-- Launch Icon Title -->
+<!-- გაშვების ხატულის სათაური -->
 <meta name="apple-mobile-web-app-title" content="App Title">
 
 <!-- Enable standalone (full-screen) mode -->
+<!-- რთავს დამოუკიდებელ (standalone / სრულეკრანიან) რეჟიმს -->
 <meta name="mobile-web-app-capable" content="yes">
 
 <!-- Status bar appearance (has no effect unless standalone mode is enabled) -->
+<!-- სტატუსის ზოლის იერსახე (ეფექტი არ აქვს, თუ დამოუკიდებელი რეჟიმი ჩართული არ არის) -->
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
 <!-- Viewport fit for notched phones (iPhone X and later); add viewport-fit=cover to your existing viewport meta tag -->
+<!-- ხედვის არეალის მორგება ამონაჭრიანი (notch) ეკრანის მქონე ტელეფონებზე (iPhone X და უფრო ახალი); დაამატეთ viewport-fit=cover თქვენს არსებულ viewport მეტა ტეგს -->
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 
 <!-- iOS app deep linking -->
+<!-- iOS აპლიკაციის სიღრმისეული ბმულები (deep linking) -->
 <meta name="apple-itunes-app" content="app-id=APP-ID, app-argument=http/url-sample.com">
 <link rel="alternate" href="ios-app://APP-ID/http/url-sample.com">
 ```
@@ -638,6 +648,7 @@ Fediverse-ის ზოგიერთი პროგრამა, როგო
 - 📖 [Configuring Web Applications](https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariWebContent/ConfiguringWebApplications/ConfiguringWebApplications.html)
 
 **Note:** Properties such as app title (`apple-mobile-web-app-title`), standalone/display mode, and app icons (`apple-touch-icon`) are more reliably and portably configured using the [Web App Manifest](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest) (`<link rel="manifest">`), which is the recommended approach for Progressive Web Apps (PWAs). The Apple-specific meta tags remain useful as a fallback for older iOS versions.
+**შენიშვნა:** ისეთი თვისებები, როგორიცაა აპლიკაციის სათაური (`apple-mobile-web-app-title`), დამოუკიდებელი/ჩვენების რეჟიმი და აპლიკაციის ხატულები (`apple-touch-icon`), უფრო საიმედოდ და პორტაბელურად კონფიგურირდება [Web App Manifest](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest)-ის (`<link rel="manifest">`) მეშვეობით, რაც პროგრესული ვებაპლიკაციებისთვის (PWA) რეკომენდებულ მიდგომას წარმოადგენს. Apple-ისთვის სპეციფიკური მეტა ტეგები კვლავ გამოსადეგია, როგორც სათადარიგო ვარიანტი iOS-ის ძველი ვერსიებისთვის.
 
 ### Google Android
 
@@ -645,15 +656,19 @@ Fediverse-ის ზოგიერთი პროგრამა, როგო
 <meta name="theme-color" content="#E64545">
 
 <!-- Add to home screen -->
+<!-- მთავარ ეკრანზე დამატება -->
 <meta name="mobile-web-app-capable" content="yes">
 <!-- More info: https://developer.chrome.com/multidevice/android/installtohomescreen -->
+<!-- დამატებითი ინფორმაცია: https://developer.chrome.com/multidevice/android/installtohomescreen -->
 
 <!-- Android app deep linking -->
+<!-- Android აპლიკაციის სიღრმისეული ბმულები (deep linking) -->
 <meta name="google-play-app" content="app-id=package-name">
 <link rel="alternate" href="android-app://package-name/http/url-sample.com">
 ```
 
 **Note:** `theme-color` and the "add to home screen" / standalone behavior are better defined using the [Web App Manifest](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest) (`<link rel="manifest">`). The `theme-color` meta tag can still serve as a fallback for browsers that do not yet support the manifest `theme_color` property.
+**შენიშვნა:** `theme-color` და „მთავარ ეკრანზე დამატების" / დამოუკიდებელი რეჟიმის ქცევა უმჯობესია, განისაზღვროს [Web App Manifest](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest)-ის (`<link rel="manifest">`) მეშვეობით. `theme-color` მეტა ტეგი კვლავ გამოდგება, როგორც სათადარიგო ვარიანტი იმ ბრაუზერებისთვის, რომლებსაც მანიფესტის `theme_color` თვისების მხარდაჭერა ჯერ არ გააჩნიათ.
 
 ### Google Chrome
 
@@ -661,6 +676,7 @@ Fediverse-ის ზოგიერთი პროგრამა, როგო
 <link rel="chrome-webstore-item" href="https://chrome.google.com/webstore/detail/APP_ID">
 
 <!-- Disable translation prompt -->
+<!-- თიშავს თარგმანის შეთავაზებას -->
 <meta name="google" content="notranslate">
 ```
 
