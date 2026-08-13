@@ -395,31 +395,43 @@ The following is the recommended order of elements in the `<head>` for best perf
 - 📖 [Web App Manifest (MDN)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest)
 
 ## Scripts
+## სკრიპტები
 
 ```html
 <!--
   Scripts: place <script> tags at the end of <body> when possible.
   The following attributes control loading behavior when placed in <head>:
 -->
+<!--
+  სკრიპტები: შეძლებისდაგვარად <script> ტეგები განათავსეთ <body>-ის ბოლოში.
+  ქვემოთ მოცემული ატრიბუტები აკონტროლებენ ჩატვირთვის ქცევას <head>-ში განთავსებისას:
+-->
 
 <!-- Blocks HTML parsing and content rendering until the script is fetched and executed -->
+<!-- ბლოკავს HTML-ის დამუშავებას (parsing) და შიგთავსის ასახვას, ვიდრე სკრიპტი არ ჩამოიტვირთება და შესრულდება -->
 <script src="script.js"></script>
 
 <!-- The script will be fetched in parallel with parsing and executed as soon as it is available (before parsing completes) -->
+<!-- სკრიპტი ჩამოიტვირთება დამუშავების პარალელურად და შესრულდება ხელმისაწვდომობისთანავე (დამუშავების დასრულებამდე) -->
 <script async src="script.js"></script>
 
 <!-- The script will be fetched in parallel with parsing and executed when the page has finished parsing -->
+<!-- სკრიპტი ჩამოიტვირთება დამუშავების პარალელურად და შესრულდება მაშინ, როცა გვერდის დამუშავება დასრულდება -->
 <script defer src="script.js"></script>
 
 <!-- async takes precedence in modern browsers; defer acts as a fallback for older browsers that don't support async -->
+<!-- თანამედროვე ბრაუზერებში უპირატესობა ენიჭება async-ს; defer წარმოადგენს სათადარიგო ვარიანტს ძველი ბრაუზერებისთვის, რომლებსაც async-ის მხარდაჭერა არ გააჩნიათ -->
 <script async defer src="script.js"></script>
 
 <!-- Inline script -->
+<!-- დოკუმენტის შიდა სკრიპტი -->
 <script>
   // function(s) go here
+  // ფუნქცია (ან ფუნქციები) დაიწერება აქ
 </script>
 
 <!-- Subresource Integrity (SRI): use the integrity attribute to verify that the fetched resource has been delivered without unexpected manipulation -->
+<!-- Subresource Integrity (SRI): გამოიყენეთ integrity ატრიბუტი, რათა გადაამოწმოთ, რომ ჩამოტვირთული რესურსი მოწოდებულია არასასურველი მანიპულაციების გარეშე -->
 <script src="https://example.com/script.js" integrity="sha384-oqVuAfXRKap7fdgcCY5uykM6+R9GqQ8K/uxy9rx7HNQlGYl1kPzQho1wx4JwY8wC"></script>
 ```
 
