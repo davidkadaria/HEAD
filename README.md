@@ -439,15 +439,20 @@ The following is the recommended order of elements in the `<head>` for best perf
 - 📖 [Subresource Integrity](https://developer.mozilla.org/en-US/docs/Web/Security/Defenses/Subresource_Integrity)
 
 ## Icons
+## ხატულები
 
 ```html
 <!-- For IE 10 and below -->
+<!-- IE 10-ისა და უფრო ძველი ვერსიებისთვის -->
 <!-- Place favicon.ico in the root directory - no tag necessary -->
+<!-- განათავსეთ favicon.ico ძირეულ (root) დირექტორიაში - ტეგი არ არის საჭირო -->
 
 <!-- Icon in the highest resolution we need it for -->
+<!-- ხატულა იმ უმაღლესი გარჩევადობით, რომლითაც იგი გვჭირდება -->
 <link rel="icon" sizes="192x192" href="/path/to/icon.png">
 
 <!-- Apple Touch Icon (reuse 192px icon.png) -->
+<!-- Apple Touch Icon (გამოიყენეთ იგივე 192-პიქსელიანი icon.png) -->
 <link rel="apple-touch-icon" href="/path/to/apple-touch-icon.png">
 ```
 
