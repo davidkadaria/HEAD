@@ -389,7 +389,7 @@ The following is the recommended order of elements in the `<head>` for best perf
 ```
 
 **Note:** The [Web App Manifest](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest) (`manifest.json`) is the recommended, cross-platform way to declare installable web app properties — including `name`, `icons`, `theme_color`, and `display` mode — in a single file, instead of relying on multiple platform-specific `<meta>` tags.
-**შენიშვნა:** [Web App Manifest](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest) (`manifest.json`) გახლავთ დაინსტალირებადი ვებაპლიკაციის თვისებების — მათ შორის `name`, `icons`, `theme_color` და `display` რეჟიმის — ერთ ფაილში გამოცხადების რეკომენდებული, პლატფორმათაშორისი გზა, ნაცვლად იმისა, რომ დავეყრდნოთ კონკრეტული პლატფორმებისთვის განკუთვნილ მრავალ `<meta>` ტეგს.
+**შენიშვნა:** [Web App Manifest](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest) (`manifest.json`) გახლავთ დაინსტალირებადი ვებაპლიკაციის თვისებების — მათ შორის `name`, `icons` (ხატულები[^9]), `theme_color` და `display` რეჟიმის — ერთ ფაილში გამოცხადების რეკომენდებული, პლატფორმათაშორისი გზა, ნაცვლად იმისა, რომ დავეყრდნოთ კონკრეტული პლატფორმებისთვის განკუთვნილ მრავალ `<meta>` ტეგს.
 
 - 📖 [Link Relations](https://www.iana.org/assignments/link-relations/link-relations.xhtml)
 - 📖 [Web App Manifest (MDN)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest)
@@ -807,3 +807,5 @@ Everything helps, thanks! 🙏
     მცირე პროგრამა / ტექსტური ფაილი, რომელიც შეიცავს სხვა პროგრამისთვის შესასრულებელ ბრძანებებს (ინგლ.: Script)
 [^8]:
     საძიებო რობოტი, საძიებო აგენტი, „ობობა“ (სპეციალური კომპიუტერული პროგრამა, რომელიც ინტერნეტში ავტომატურად აგროვებს და ახარისხებს ინფორმაციას, ახდენს ვებსაიტების ინდექსაციას და მისთ.; აგრ. web crawler, spider).
+[^9]:
+    მცირე ზომის სიმბოლური გამოსახულება ეკრანზე ამა თუ იმ პროგრამის, ფოლდერის და ა.შ. ამოსარჩევად (ინგლ.: Icon)
