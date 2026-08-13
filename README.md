@@ -302,51 +302,70 @@ The following is the recommended order of elements in the `<head>` for best perf
 - 📖 [Geotagging on Wikipedia](https://en.wikipedia.org/wiki/Geotagging#HTML_pages)
 
 ## Link
+## ბმული (Link)
 
 ```html
 <!-- Points to an external stylesheet -->
+<!-- მიუთითებს გარე სტილის კასკადურ ცხრილზე (CSS ფაილზე) -->
 <link rel="stylesheet" href="https://example.com/styles.css">
 
 <!-- Helps prevent duplicate content issues -->
+<!-- გვეხმარება შიგთავსის დუბლირებასთან დაკავშირებული პრობლემების თავიდან აცილებაში -->
 <link rel="canonical" href="https://example.com/article/?page=2">
 
 <!-- Links to a Web App Manifest — the recommended way to define PWA metadata such as app name, icons, theme_color, and display mode -->
+<!-- მიუთითებს Web App Manifest-ზე — ესაა PWA მეტამონაცემების (როგორიცაა აპლიკაციის სახელი, ხატულები, theme_color და ჩვენების რეჟიმი) განსაზღვრის რეკომენდებული გზა -->
 <link rel="manifest" href="manifest.json">
 
 <!-- Links to information about the author(s) of the document -->
+<!-- მიუთითებს ინფორმაციას დოკუმენტის ავტორის (ან ავტორების) შესახებ -->
 <link rel="author" href="humans.txt">
 
 <!-- Refers to a copyright statement that applies to the link's context -->
+<!-- მიუთითებს საავტორო უფლებების განცხადებაზე, რომელიც ვრცელდება ბმულის კონტექსტზე -->
 <link rel="license" href="copyright.html">
 
 <!-- Gives a reference to a location in your document that may be in another language -->
+<!-- იძლევა მითითებას დოკუმენტის იმ ვერსიის მისამართის შესახებ, რომელიც შეიცავს იგივე შინაარსს ალტერნატიულ ენაზე -->
 <link rel="alternate" href="https://es.example.com/" hreflang="es">
 
 <!-- Provides information about an author or another person
      Used for RelMeAuth, a distributed form of identity verification.
      See https://microformats.org/wiki/RelMeAuth to learn more -->
+<!-- გვაწვდის ინფორმაციას ავტორის ან სხვა პირის შესახებ.
+     გამოიყენება RelMeAuth-ისთვის — ვინაობის დამოწმების მიზნით.
+     დამატებითი ინფორმაციისთვის იხილეთ https://microformats.org/wiki/RelMeAuth -->
 <link rel="me" href="https://google.com/profiles/thenextweb" type="text/html">
 <link rel="me" href="mailto:name@example.com">
 <link rel="me" href="sms:+15035550125">
 
 <!-- Provides a self reference - useful when the document has multiple possible references -->
+<!-- გვაწვდის მითითებას საკუთარ თავზე — გამოსადეგია, როცა დოკუმენტს რამდენიმე შესაძლო მისამართი აქვს -->
 <link rel="self" type="application/atom+xml" href="https://example.com/atom.xml">
 
 <!-- The previous, and next documents in a series of documents, respectively -->
+<!-- დოკუმენტთა მიმდევრობაში, შესაბამისად, წინა და შემდეგი დოკუმენტები -->
 <link rel="prev" href="https://example.com/article/?page=1">
 <link rel="next" href="https://example.com/article/?page=3">
 
 <!-- Notifies a URL when you link to it on your document
      More information at https://webmention.net -->
+<!-- აცნობებს URL-ს, როცა თქვენს დოკუმენტში მასზე ბმულს განათავსებთ.
+     დამატებითი ინფორმაცია: https://webmention.net -->
 <link rel="webmention" href="https://example.com/webmention">
 
 <!-- Enables posting to your own domain using a Micropub client 
      More information at https://indieweb.org/Micropub -->
+<!-- საშუალებას გვაძლევს, გამოვაქვეყნოთ პოსტები საკუთარ დომენზე Micropub კლიენტის გამოყენებით.
+     დამატებითი ინფორმაცია: https://indieweb.org/Micropub -->
 <link rel="micropub" href="https://example.com/micropub">
 
 <!-- Enables you to use your site with IndieAuth, an identity solution that
      lets you authenticate with your domain name.
      Read more at https://indieauth.net. -->
+<!-- საშუალებას გვაძლევს, ჩვენი საიტი გამოიყენოთ IndieAuth-თან (ვინაობის დადგენის გადაწყვეტილება) ერთად,
+     რომელიც ავთენტიფიკაციის გავლის საშუალებას გაძლევთ საკუთარი დომენის სახელით.
+     დამატებითი ინფორმაცია: https://indieauth.net -->
 <link rel="token_endpoint" href="https://example.com/token">
 <link rel="authorization_endpoint" href="https://example.com/auth">
 
@@ -354,11 +373,14 @@ The following is the recommended order of elements in the `<head>` for best perf
 <link rel="search" href="/open-search.xml" type="application/opensearchdescription+xml" title="Search Title">
 
 <!-- Feeds -->
+<!-- არხები (Feeds) -->
 <link rel="alternate" href="https://feeds.feedburner.com/example" type="application/rss+xml" title="RSS">
 <link rel="alternate" href="https://example.com/feed.atom" type="application/atom+xml" title="Atom 0.3">
 
 <!-- Prefetching, preloading, prebrowsing -->
+<!-- რესურსების წინასწარი ჩატვირთვა (Prefetching, preloading, prebrowsing) -->
 <!-- More info: https://css-tricks.com/prefetching-preloading-prebrowsing/ -->
+<!-- დამატებითი ინფორმაცია: https://css-tricks.com/prefetching-preloading-prebrowsing/ -->
 <link rel="dns-prefetch" href="//example.com/">
 <link rel="preconnect" href="https://www.example.com/">
 <link rel="prefetch" href="https://www.example.com/">
@@ -367,6 +389,7 @@ The following is the recommended order of elements in the `<head>` for best perf
 ```
 
 **Note:** The [Web App Manifest](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest) (`manifest.json`) is the recommended, cross-platform way to declare installable web app properties — including `name`, `icons`, `theme_color`, and `display` mode — in a single file, instead of relying on multiple platform-specific `<meta>` tags.
+**შენიშვნა:** [Web App Manifest](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest) (`manifest.json`) გახლავთ დაინსტალირებადი ვებაპლიკაციის თვისებების — მათ შორის `name`, `icons`, `theme_color` და `display` რეჟიმის — ერთ ფაილში გამოცხადების რეკომენდებული, პლატფორმათაშორისი გზა, ნაცვლად იმისა, რომ დავეყრდნოთ კონკრეტული პლატფორმებისთვის განკუთვნილ მრავალ `<meta>` ტეგს.
 
 - 📖 [Link Relations](https://www.iana.org/assignments/link-relations/link-relations.xhtml)
 - 📖 [Web App Manifest (MDN)](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Manifest)
