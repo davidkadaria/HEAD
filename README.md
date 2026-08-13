@@ -885,6 +885,8 @@ Everything helps, thanks! 🙏
 
 [![CC0](https://licensebuttons.net/p/zero/1.0/88x31.png)](https://creativecommons.org/publicdomain/zero/1.0/)
 
+## სქოლიო
+
 [^1]:
     სიგნალის ან მონაცემების გადასაცემად ვარგის ფორმატში გადაყვანა (ინგლ.: Encoding)
 [^2]:
