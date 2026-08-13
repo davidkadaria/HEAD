@@ -461,10 +461,12 @@ The following is the recommended order of elements in the `<head>` for best perf
 - 📖 [Icons & Browser Colors](https://web.dev/articles/icons-and-browser-colors)
 
 ## Social
+## სოციალური ქსელები
 
 ### Open Graph
 
 > The [Open Graph protocol](https://ogp.me/) is the de facto standard for controlling how your content appears when shared on social platforms. Originally created by Facebook, it's now consumed by most major platforms — including LinkedIn, X (as a fallback when Twitter Card tags are absent), Discord, Slack, iMessage, Mastodon, Bluesky, and WhatsApp.
+> [Open Graph პროტოკოლი](https://ogp.me/) გახლავთ დე ფაქტო[^13] სტანდარტი, რომლითაც კონტროლდება, თუ როგორ გამოჩნდება თქვენი ვებგვერდის შიგთავსი სოციალურ პლატფორმებზე გაზიარებისას. თავდაპირველად იგი Facebook-ის მიერ შეიქმნა, დღეს კი მას მსხვილი პლატფორმების უმეტესობა იყენებს, მათ შორის: LinkedIn, X (როგორც სათადარიგო ვარიანტს, როცა Twitter Card ტეგები არ არის წარმოდგენილი), Discord, Slack, iMessage, Mastodon, Bluesky და WhatsApp.
 
 ```html
 <meta property="og:url" content="https://example.com/page.html">
@@ -480,6 +482,7 @@ The following is the recommended order of elements in the `<head>` for best perf
 
 - 📖 [Open Graph protocol](https://ogp.me/)
 - 🛠 Test your page with the [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/) or the [LinkedIn Post Inspector](https://www.linkedin.com/post-inspector/)
+- 🛠 გამოცადეთ თქვენი ვებგვერდი [Facebook Sharing Debugger](https://developers.facebook.com/tools/debug/)-ის ან [LinkedIn Post Inspector](https://www.linkedin.com/post-inspector/)-ის მეშვეობით
 
 ### Schema.org
 
@@ -494,13 +497,16 @@ The following is the recommended order of elements in the `<head>` for best perf
 ```
 
 **Note:** These meta tags require the `itemscope` and `itemtype` attributes to be added to the `<html>` tag.
+**შენიშვნა:** აღნიშნული მეტა ტეგები საჭიროებენ, რომ `<html>` ტეგს დაემატოს `itemscope` და `itemtype` ატრიბუტები.
 
 - 📖 [Getting Started - schema.org](https://schema.org/docs/gs.html)
 - 🛠 Test your page with the [Rich Results Test](https://search.google.com/test/rich-results)
+- 🛠 გამოცადეთ თქვენი გვერდი [Rich Results Test](https://search.google.com/test/rich-results)-ის მეშვეობით
 
 ### Google JSON-LD Schema
 
 The following is used by Google to help provide your site with a knowledge graph result when someone Googles you (this is the pane to the right of the search results that typically appears for larger brands):
+ქვემოთ მოცემულს Google იყენებს, რათა თქვენს საიტს მიანიჭოს ცოდნის დიაგრამის[^10] შედეგი, როცა ვინმე თქვენ Google-ში მოგიძიებთ (ეს გახლავთ ძიების შედეგების მარჯვნივ მდებარე პანელი, რომელიც, როგორც წესი, მსხვილი ბრენდებისთვის ჩნდება):
 
 ```html
 <script type="application/ld+json">
@@ -524,6 +530,7 @@ The following is used by Google to help provide your site with a knowledge graph
 ### Pinterest
 
 Pinterest lets you prevent people from saving things from your website, according [to their help center](https://help.pinterest.com/en/business/article/prevent-saves-to-pinterest-from-your-site). The `description` is optional.
+Pinterest-ის [დახმარების ცენტრის](https://help.pinterest.com/en/business/article/prevent-saves-to-pinterest-from-your-site) თანახმად, შეგიძლიათ ხალხს აუკრძალოთ თქვენი ვებსაიტიდან მასალების შენახვა. `description` ატრიბუტი არასავალდებულოა.
 
 ```html
 <meta name="pinterest" content="nopin" description="Sorry, you can't save from my website!">
@@ -545,6 +552,7 @@ Pinterest lets you prevent people from saving things from your website, accordin
 ### QQ/Wechat
 
 Users share web pages to qq wechat will have a formatted message
+QQ-სა და WeChat-ში გაზიარებული ვებგვერდები ფორმატირებული შეტყობინების სახით გამოჩნდება
 
 ```html
 <meta itemprop="name" content="share title">
@@ -557,9 +565,11 @@ Users share web pages to qq wechat will have a formatted message
 ### Dublin Core
 
 [Dublin Core](https://www.dublincore.org/) is a metadata vocabulary standardized as [ISO 15836](https://www.iso.org/standard/71339.html) and maintained by the Dublin Core Metadata Initiative (DCMI). It defines fifteen core elements for describing resources and is widely used in digital libraries, institutional repositories, academic publishing, and government portals. To use Dublin Core in HTML, declare the DC namespace and then add the desired elements as `<meta>` tags with a `DC.` prefix.
+[Dublin Core](https://www.dublincore.org/) გახლავთ მეტამონაცემების ლექსიკონი, სტანდარტიზებული როგორც [ISO 15836](https://www.iso.org/standard/71339.html), რომლის მოვლა-შენახვასაც უზრუნველყოფს Dublin Core Metadata Initiative (DCMI). იგი განსაზღვრავს თხუთმეტ ძირითად ელემენტს რესურსების აღსაწერად და ფართოდ გამოიყენება ციფრულ ბიბლიოთეკებში, ინსტიტუციურ საცავებში, აკადემიურ გამომცემლობებსა და სამთავრობო პორტალებზე. Dublin Core-ის HTML-ში გამოსაყენებლად გამოაცხადეთ DC სახელთა სივრცე[^11], შემდეგ კი დაამატეთ სასურველი ელემენტები `<meta>` ტეგების სახით, `DC.` თავსართით.
 
 ```html
 <!-- Declare the Dublin Core namespace -->
+<!-- გამოვაცხადოთ Dublin Core-ის სახელთა სივრცე -->
 <link rel="schema.DC" href="https://purl.org/dc/elements/1.1/">
 
 <meta name="DC.title" content="Page Title">
@@ -585,6 +595,7 @@ Users share web pages to qq wechat will have a formatted message
 ### Fediverse
 
 Some Fediverse software such as Mastodon allow you to put your Fediverse handle in a meta tag which will show up in embeds to your website. In addition to the tag you will also need to add your domain to the list of allowed websites in "Settings -> Public profile -> Verification -> Author attribution" (for Mastodon).
+Fediverse-ის ზოგიერთი პროგრამა, როგორიცაა Mastodon, საშუალებას გაძლევთ, თქვენი Fediverse-ის მომხმარებლის სახელი[^12] მეტა ტეგში მოათავსოთ, რომელიც თქვენი ვებსაიტის ჩაშენებულ ხედებში (embeds) გამოჩნდება. ტეგის გარდა ასევე საჭიროა, თქვენი დომენი დაამატოთ ნებადართული ვებსაიტების სიაში: „Settings -> Public profile -> Verification -> Author attribution“ (Mastodon-ისთვის).
 
 ```html
 <meta name="fediverse:creator" content="@handle@example.org">
@@ -826,3 +837,11 @@ Everything helps, thanks! 🙏
     საძიებო რობოტი, საძიებო აგენტი, „ობობა“ (სპეციალური კომპიუტერული პროგრამა, რომელიც ინტერნეტში ავტომატურად აგროვებს და ახარისხებს ინფორმაციას, ახდენს ვებსაიტების ინდექსაციას და მისთ.; აგრ. web crawler, spider).
 [^9]:
     მცირე ზომის სიმბოლური გამოსახულება ეკრანზე ამა თუ იმ პროგრამის, ფოლდერის და ა.შ. ამოსარჩევად (ინგლ.: Icon)
+[^10]:
+    (ინგლ.: Knowledge graph)
+[^11]:
+    (ინგლ.: Namespace)
+[^12]:
+    მომხმარებლის უნიკალური სახელი / იდენტიფიკატორი სოციალურ ქსელში (ინგლ.: Handle)
+[^13]:
+    ფაქტობრივი, რეალური (ლათ.: de facto)
